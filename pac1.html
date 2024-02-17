@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>hello</h2>
+    <script>
+        //    function myfirst(){
+        //     console.log("hello");
+        //     console.log("hey!");
+        //    }
+        //    myfirst();
+
+        // function myfunction(msg,note){ //parameter
+        //     console.log(msg,note);
+        // }
+        // myfunction("Hello world","hey");//arguement
+
+        // function sum(x,y){
+        //     add = x + y;
+        //     return add;
+        // }
+        // let val = sum(3,4)
+        // console.log(val);
+
+        // const arrowsun = (a,b)=>{
+        //     console.log(a/b);
+        // };arrowsun(8,4);
+
+        // const printmsg = () =>{
+        //     console.log("hey!");
+        // };
+        // printmsg();
+
+        // function countvolwels(str){
+        //     for (let char of str){
+        //         console.log(char);
+        //     }
+        // };countvolwels("sikandar");
+
+        //for each
+        // let arr = [1, 2, 3, 4, 5];
+        // arr.forEach(function printval(val) {
+        //     console.log(val);
+        // });
+
+        // let arr1 = [1, 2, 3, 4, 5];
+
+        // arr.forEach((val) => {
+        //     console.log(val);
+        // });
+
+        // function myfirst(){
+        //     console.log("hey");
+        //     console.log("hey");
+        //     console.log("hey");
+        //     console.log("hey");
+        // };
+        // myfirst();
+
+        // function addtwonumber(number1, number2) {
+        //     console.log(number1 + number2);
+        // };
+        function addtwonumber(number1, number2) {
+            //   let result =  number1 + number2;
+            //   return result
+            return number1 + number2;
+        };
+        const result = addtwonumber(4, 5);
+        console.log("result", result);
+
+        function loginUserMessage(username) {
+            return `${username} just logged in`
+        };
+        console.log(loginUserMessage("sam"));
+
+        function calculateCartPrice(...num1) {
+            return num1
+        }
+        console.log(calculateCartPrice(200,300,400,500));
+
+        const user ={
+            username: "sam",
+            price: 99,
+        };
+        function handleObject(anyobject){
+            console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
+            
+        };
+        // handleObject(user)
+        
+        handleObject({
+            username:"sam",
+            price:499
+        })
+
+        const myNewArray =[100,200,300,400]
+        function returnsecondvalue(getArray){
+            return getArray[1]
+        }
+        console.log(returnsecondvalue(myNewArray));
+
+        // const addtwo = (num1,num2)=>{
+        //     return num1 + num2;
+        // };
+        // console.log(addtwo(4,5));
+
+        // const addtwo = (num1,num2)=> num1 + num2;
+        // console.log(addtwo(4,2));/
+
+        // const addtwo = (num1,num2)=> (num1 + num2);
+        // console.log(addtwo(4,2));
+
+        const addtwo = (num1,num2)=> ({username: "sam"})
+        console.log(addtwo(4,2));
+
+
+
+
+    </script>
+</body>
+
+</html>

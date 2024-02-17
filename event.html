@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: black;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- this is inline event handling 
+    per yeh code k liye sahi nhi hai -->
+    <!-- <div class="box" onmouseover="console.log('you are inside div');">hello</div>
+    <button onclick="console.log('button was clicked'); alert('hello')">
+        click me!</button>
+    <button ondblclick="console.log('button was clicked'); alert('hello')">
+      double  click me!</button> -->
+    <button id="btn1">click me!</button>
+    <script>
+        let btn1 = document.querySelector("#btn1");
+        // btn1.onclick = () =>{
+        //     console.log("btn1 was clicked");
+        //     let a =25;
+        //     a++;
+        //     console.log(a);
+        // }
+        // btn1.onclick = (evt) =>{
+        //     console.log(evt);
+        //     console.log(evt.type);
+        //     console.log(evt.target);
+        //     console.log(evt.clientX, evt.clientY);
+        // }
+        //event listner
+        // btn1.addEventListener("click", () => {
+        //     console.log("button1 was clicked -handler");
+        // })
+        // btn1.addEventListener("click", () => {
+        //     console.log("button1 was clicked -handler-two2");
+        // })
+        //remove...
+        btn1.addEventListener("click", () => {
+            console.log("button1 was clicked -handler");
+        })
+        btn1.addEventListener("click", () => {
+            console.log("button1 was clicked -handler-two2");
+        })
+        const handler3=("click", () => {
+            console.log("button1 was clicked -handler3");
+        })
+        btn1.addEventListener("click" ,handler3)
+
+        btn1.addEventListener("click", () => {
+            console.log("button1 was clicked -handler-two4");
+        })
+        btn1.removeEventListener("click",handler3);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

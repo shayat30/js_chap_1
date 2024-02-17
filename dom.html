@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first-heading {
+            color: red;
+            background-color: aqua;
+        }
+
+        .text {
+            color: rgb(245, 243, 243);
+            background-color: rgb(96, 22, 22);
+        }
+        .boxone{
+            width: 100px;
+            height: 200px;
+            padding: 10px 10px;
+            background-color: red;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1 id="first-heading">Hello World</h1>
+    <h1 id="first-heading2">come to true the my world</h1>
+    <h2 class="text">hello</h2>
+    <h3 class="text">Lorem consectetur</h3>
+    <p>hey</p>
+    <p>are</p>
+    <div class="one">one</div> -->
+    <!-- <div>
+        <h2>fruits</h2>
+        <ul>
+            <li>mango</li>
+            <li>banana</li>
+            <li>litchi</li>
+            <li>orange</li>
+        </ul>
+    </div> -->
+    <div class="boxone">Hello World
+        <ul>
+            <li>orange</li>
+            <li>apple</li>
+            <li>mango</li>
+        </ul>
+    </div>
+    <p>sam khan here</p>
+    <!-- <div id="box">this is a ID</div>
+    <p class="para">this is first line</p> -->
+    <!-- <div class="para">this is a simple line</div> -->
+    <script>
+        // console.log("hello");
+        // console.log(window);
+
+        // console.log(window.document);
+        // console.dir(window.document)
+        // console.log(document.body);
+
+        //dom-munopolation
+
+        // let headineOne = document.getElementById("first-heading");
+        // console.dir(headineOne);
+
+        // let content = document.getElementsByClassName("text")
+        // console.dir(content);
+
+        // let para = document.getElementsByTagName("p");
+        // console.dir(para);
+
+        // queryselector
+        // let fristElement = document.querySelector("p")
+        // console.dir(fristElement);
+
+        // let allElement = document.querySelectorAll("p")
+        // console.dir(allElement);
+
+        // let fristElement = document.querySelector(".text")
+        // console.dir(fristElement);
+
+        // let allElement = document.querySelectorAll(".text")
+        // console.dir(allElement);
+
+        // let fristElement = document.querySelector("#first-heading")
+        // console.dir(fristElement);
+
+        // let allElement = document.querySelectorAll("#first-heading2")
+        // console.dir(allElement);
+        // let divOne = document.querySelector("div")
+        // console.dir(divOne);
+        // // console.log(divOne.innerText);
+        // console.log(divOne.innerText = "hey");
+
+        // let divnew = document.querySelector("div")
+        // console.log(divnew);
+
+        // let idOne = divnew.getAttribute("id");
+        // console.log(idOne);
+        
+        // let pOne = document.querySelector("p");
+        // console.log(pOne.getAttribute("class"));
+
+        // let pOne = document.querySelector("p");
+        // console.log(pOne.setAttribute("class","NewOne"));
+
+        // let divStyle = document.querySelector("div")
+        // console.log(divStyle);
+        // divStyle.style.backgroundColor = "pink";
+        // divStyle.style.borderRadius = "4px";
+
+        //insert elements.......
+        let newBtn = document.createElement("button");
+        newBtn.innerText = "click me!";
+        console.log(newBtn);
+
+        let div = document.querySelector("div");
+        // div.append(newBtn);
+        // div.prepend(newBtn);
+        div.before(newBtn);
+        // div.after(newBtn);
+        let newpara = document.querySelector("p");
+        newpara.remove();
+
+
+    </script>
+</body>
+
+</html>
